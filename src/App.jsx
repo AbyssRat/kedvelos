@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <div className="app">
-        {users.map((user) => (
+        <div className="card-container">{users.map((user) => (
           <div key={user.id} className="card">
             <img src={user.picture} alt={user.name} />
             <h2>{user.name}</h2>
@@ -54,12 +54,13 @@ function App() {
                   )
                 }
               >
-                nem szeret 3:
+                'nem szeret 3:
               </button>
             </div>
           </div>
         ))}
-      </div>
+      </div></div>
+        
 
     
     </>
